@@ -45,7 +45,7 @@
             "type" : "VEC3"
         },
         {
-            "name": "TopRight_TEXCOORD_0",
+            "name": "Top",
             "bufferView" : 3,
             "componentType" : 5126,
             "count" : 4,
