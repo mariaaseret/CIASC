@@ -1,12 +1,12 @@
-# Texture Coordinate Test
+# PostIt interativo CIASC
 
 ## Screenshot
 
 ![screenshot](screenshot/screenshot.png)
 
-## Description
+## Descrição
 
-This model demonstrates the orientation of texture coordinates.  The materials and accessors have all been named according to function.  In particular, the accessor named `TopLeft_TEXCOORD_0` shows that the upper-left portion of the texture image is represented by texture coordinates ranging from roughly `0.0` to roughly `0.4`.
+Este modelo demonstra a orientação das coordenadas de textura. Os materiais e acessórios foram todos nomeados de acordo com a função. Em particular, o acessador chamado "TopLeft_TEXCOORD_0" mostra que a parte superior esquerda da imagem de textura é representada por coordenadas de textura que variam de "0.0" a aproximadamente "0.4".
 
 ```
 {
@@ -26,8 +26,3 @@ This model demonstrates the orientation of texture coordinates.  The materials a
 },
 ```
 
-## License Information
-
-Copyright 2017-2018 Analytical Graphics, Inc.
-CC-BY 4.0 https://creativecommons.org/licenses/by/4.0/
-Model and textures by Ed Mackey.
