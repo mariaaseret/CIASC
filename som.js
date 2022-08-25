@@ -1,3 +1,13 @@
+//
+//  hearts-Registerbutton.js
+//  
+//  Created by Basinsky on 24 Feb 2021
+//  
+//  Register button script for hearts game  
+//
+//  Distributed under the Apache License, Version 2.0.
+//  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
+//
 (function() {
     var myID; 
     var myParentID;
