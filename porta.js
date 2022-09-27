@@ -4,10 +4,14 @@
     }
 
     this.clickDownOnEntity = function (entityID, mouseEvent) {
+     
+      Script.setInterval(function () {
+        Entities.editEntity(entityID, { color: { red: randRange(0,255), green: randRange(0,255), blue: randRange(0,255)} });
+      }, 1000);
+
       Script.setTimeout(function () {
-         Entities.editEntity(entityID, { color: { red: randRange(0,255), green: randRange(0,255), blue: randRange(0,255)} });
-         print("Timeout timer fired");
-      }, 1000); 
+        Script.stop(true);
+      }, 5000);
     };
 })
 
