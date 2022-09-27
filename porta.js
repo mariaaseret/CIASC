@@ -4,6 +4,6 @@
     }
 
     this.clickDownOnEntity = function (entityID, mouseEvent) {
-        Entities.editEntity(entityID, { dimensions: { x: 0.5, y: 0.5, z: 0.1 } });
+        Entities.editEntity(entityID, { dimensions: { x: 5, y: 15, z: 7 } });
     };
 })
