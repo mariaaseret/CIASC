@@ -7,12 +7,15 @@
                 return count++;
          }   
     }
+    
+    
 
 
     this.clickDownOnEntity = function (entityID, mouseEvent) {
          for(var i = 0; i < 10; ++i){
-            Entities.editEntity(entityID, { dimensions: { x: i, y: 15, z: 7 } });
+             Script.setTimeout(function () {
+                Entities.editEntity(entityID, { dimensions: { x: i, y: 15, z: 7 } });
+            }, 1000);
          }
-        
     };
 })
