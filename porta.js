@@ -4,8 +4,6 @@
     }
 
     this.clickDownOnEntity = function (entityID, mouseEvent) {
-        Entities.editEntity(entityID, { color: { red: randRange(0,255), green: randRange(0,255), blue: randRange(0,255)}, dimensions: { x: 0.5, y: 0.5, z: 0.5 });
-  
+        Entities.editEntity(entityID, { dimensions: { x: 0.5, y: 0.5, z: 0.1 } });
     };
 })
-
