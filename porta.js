@@ -9,13 +9,12 @@
     }
     
     
-
-
     this.clickDownOnEntity = function (entityID, mouseEvent) {
          for(var i = 0; i < 10; ++i){
              Script.setTimeout(function () {
                 Entities.editEntity(entityID, { dimensions: { x: i, y: 15, z: 7 } });
                  print(i);
+                 print("Ola");
             }, 3000);
          }
     };
