@@ -10,12 +10,15 @@
     
     
     this.clickDownOnEntity = function (entityID, mouseEvent) {
-         for(var i = 0; i < 10; ++i){
              Script.setTimeout(function () {
-                Entities.editEntity(entityID, { dimensions: { x: i, y: 15, z: 7 } });
-                 print(i);
-                 print("Ola");
+                Entities.editEntity(entityID, { dimensions: { x: 1, y: 5, z: 5 } });
+            }, 1000);
+            Script.setTimeout(function () {
+                Entities.editEntity(entityID, { dimensions: { x: 3, y: 5, z: 5 } });
+            }, 2000);
+            Script.setTimeout(function () {
+                Entities.editEntity(entityID, { dimensions: { x: 5, y: 5, z: 5 } });
             }, 3000);
-         }
+         
     };
 })
