@@ -1,5 +1,5 @@
 //
-//  hearts-Registerbutton.js
+//  som.js
 //  
 //  Created by Basinsky on 24 Feb 2021
 //  
@@ -17,11 +17,7 @@
     var LOCATION_ROOT_URL = Script.resolvePath(".");
     var clickSound = SoundCache.getSound(LOCATION_ROOT_URL + "448086__breviceps__normal-click.wav");    
     
-    this.preload = function (entityID) {
-        myID = entityID;
-        myParentID = Entities.getEntityProperties(myID,["parentID"]).parentID;
-        mySeatNumber = Entities.getEntityProperties(myID,["description"]).description;     
-    };
+  
 
     function click() {
         var user = Account.username;       
@@ -33,11 +29,7 @@
             };
             Audio.playSound(clickSound, injectorOptions);   
             print(user + "start is Clicked!");           
-            Entities.callEntityServerMethod(                             
-                myParentID, 
-                "registerUser",
-                [MyAvatar.sessionUUID,MyAvatar.displayName,user,mySeatNumber]
-            );            
+                   
             reset = false;
         }         
     }
