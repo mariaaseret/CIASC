@@ -28,7 +28,7 @@
         if (reset) {
             var injectorOptions = {
                 position: MyAvatar.position,
-                volume: 1,
+                volume: 100,
                 localOnly: true            
             };
             Audio.playSound(clickSound, injectorOptions);   
