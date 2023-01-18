@@ -6,7 +6,7 @@
     var reset = false;
     var RESET_TIME = 500;
     var LOCATION_ROOT_URL = Script.resolvePath(".");
-    var clickSound = SoundCache.getSound("https://github.com/mariaaseret/CIASC/blob/cd5419c8e24e85854d5c9e09a154110a06a2ee26/HIST%C3%93RICO%201.wav");    
+    var clickSound = SoundCache.getSound("https://github.com/mariaaseret/CIASC/blob/main/HIST%C3%93RICO%201.wav");    
     
     this.preload = function (entityID) {
         myID = entityID;
