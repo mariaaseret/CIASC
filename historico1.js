@@ -6,7 +6,7 @@
     var reset = false;
     var RESET_TIME = 500;
     var LOCATION_ROOT_URL = Script.resolvePath(".");
-    var clickSound = SoundCache.getSound(LOCATION_ROOT_URL + "448086__breviceps__normal-click.wav");    
+    var clickSound = SoundCache.getSound(LOCATION_ROOT_URL + "historico1.wav");    
     
     this.preload = function (entityID) {
         myID = entityID;
