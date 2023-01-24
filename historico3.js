@@ -1,5 +1,5 @@
 (function() {
-    var injector;
+    var injector = 0;
     var myID; 
     var myParentID;
     var mySeatNumber;
