@@ -18,23 +18,11 @@
         if(injector.isPlaying()){
             injector.stop();
         }else{      
-            if (reset) {
-                var injectorOptions = {
-                    position: MyAvatar.position,
-                    volume: 1,
-                    localOnly: true            
-                };
-                injector = Audio.playSound(somhistorico2, injectorOptions);
-                injector.restart();
-                reset = false;
-            }
+            injector = Audio.playSound(somhistorico2, injectorOptions);
         }
     }
 
-    Script.setInterval(function () {
-        reset = true;    
-    }, RESET_TIME);
-
+  
     this.startNearTrigger = click;
     this.clickDownOnEntity = click;
     this.startFarTrigger = click;
