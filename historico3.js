@@ -24,7 +24,8 @@
                     volume: 1,
                     localOnly: true            
                 };
-                injector = Audio.playSound(somhistorico2, injectorOptions);         
+                injector = Audio.playSound(somhistorico2, injectorOptions);
+                injector.restart();
                 reset = false;
             }
         }
