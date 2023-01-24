@@ -1,12 +1,11 @@
-
 (function() {
     var myID; 
     var myParentID;
     var mySeatNumber;
     var reset = false;
-    var RESET_TIME = 500;
+    var RESET_TIME = 20000;
     var LOCATION_ROOT_URL = Script.resolvePath(".");
-    var clickSound = SoundCache.getSound(LOCATION_ROOT_URL + "historico1.wav");    
+    var somhistorico1 = SoundCache.getSound(LOCATION_ROOT_URL + "historico1.wav");    
     
     this.preload = function (entityID) {
         myID = entityID;
@@ -22,13 +21,7 @@
                 volume: 1,
                 localOnly: true            
             };
-            Audio.playSound(clickSound, injectorOptions);   
-            print(user + "start is Clicked!");           
-            Entities.callEntityServerMethod(                             
-                myParentID, 
-                "registerUser",
-                [MyAvatar.sessionUUID,MyAvatar.displayName,user,mySeatNumber]
-            );            
+            Audio.playSound(somhistorico1, injectorOptions);         
             reset = false;
         }         
     }
