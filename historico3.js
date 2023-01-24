@@ -15,11 +15,8 @@
     };
 
     function click() {
-        if(injector.isPlaying()){
-            injector.stop();
-        }else{      
             injector = Audio.playSound(somhistorico2, injectorOptions);
-        }
+            injector.restart();
     }
 
   
