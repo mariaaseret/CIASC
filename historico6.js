@@ -3,7 +3,7 @@
     var myParentID;
     var mySeatNumber;
     var reset = false;
-    var RESET_TIME = 9000;
+    var RESET_TIME = 23000;
     var LOCATION_ROOT_URL = Script.resolvePath(".");
     var somhistorico6 = SoundCache.getSound(LOCATION_ROOT_URL + "historico6.wav");    
     
