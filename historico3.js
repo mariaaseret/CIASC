@@ -24,9 +24,12 @@
                 volume: 1,
                 localOnly: true            
             };
-            if(clickCounter != 0){
+            if((clickCounter%2) != 0){
                 injector = Audio.playSound(somhistorico3, injectorOptions);         
                 reset = false;
+            }else{
+                injector.stop();
+                reset = true;
             }
                
         }         
