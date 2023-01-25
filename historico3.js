@@ -5,7 +5,7 @@
     var mySeatNumber;
     var reset = false;
     var clickCounter = 0;
-    var RESET_TIME = 10000;
+    var RESET_TIME = 9500;
     var LOCATION_ROOT_URL = Script.resolvePath(".");
     var somhistorico3 = SoundCache.getSound(LOCATION_ROOT_URL + "historico3.wav");    
     
@@ -24,14 +24,11 @@
                 volume: 1,
                 localOnly: true            
             };
-            if(clickCounter%2 == 1){
+            if(clickCounter == 1){
                 injector = Audio.playSound(somhistorico3, injectorOptions);         
                 reset = false;
             }
-            if(clickCounter%2 == 0){
-                injector.stop();
-                reset = false;
-            }    
+               
         }         
     }
 
