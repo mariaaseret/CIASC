@@ -26,10 +26,10 @@
             };
             if((clickCounter%2) != 0){
                 injector = Audio.playSound(somhistorico3, injectorOptions);         
-                reset = false;
+                //reset = false;
             }else{
                 injector.stop();
-                reset = true;
+                //reset = true;
             }
                
         }         
