@@ -1,9 +1,11 @@
 (function() {
+    var injector;
     var myID; 
     var myParentID;
     var mySeatNumber;
     var reset = false;
-    var RESET_TIME = 9000;
+    var clickCounter = 0;
+    var RESET_TIME = 12000;
     var LOCATION_ROOT_URL = Script.resolvePath(".");
     var somhistorico3 = SoundCache.getSound(LOCATION_ROOT_URL + "historico3.wav");    
     
@@ -14,6 +16,7 @@
     };
 
     function click() {
+        clickCounter++;
         var user = Account.username;       
         if (reset) {
             var injectorOptions = {
@@ -21,7 +24,7 @@
                 volume: 1,
                 localOnly: true            
             };
-            Audio.playSound(somhistorico3, injectorOptions);         
+            injector = Audio.playSound(somhistorico3, injectorOptions);         
             reset = false;
         }         
     }
