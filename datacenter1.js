@@ -7,7 +7,7 @@
     var clickCounter = 0;
     var RESET_TIME = 9500;
     var LOCATION_ROOT_URL = Script.resolvePath(.);
-    var somhistorico3 = SoundCache.getSound(LOCATION_ROOT_URL + TELA-1-DATA-CENTER-INTRO.wav);    
+    var somhistorico3 = SoundCache.getSound(LOCATION_ROOT_URL + "TELA-1-DATA-CENTER-INTRO.wav");    
     
     this.preload = function (entityID) {
         myID = entityID;
