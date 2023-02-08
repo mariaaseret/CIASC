@@ -1,11 +1,13 @@
 (function() {
+    var injector;
     var myID; 
     var myParentID;
     var mySeatNumber;
     var reset = false;
-    var RESET_TIME = 23000;
+    var clickCounter = 0;
+    var RESET_TIME = 9500;
     var LOCATION_ROOT_URL = Script.resolvePath(".");
-    var somhistorico6 = SoundCache.getSound(LOCATION_ROOT_URL + "historico6.wav");    
+    var somhistorico3 = SoundCache.getSound(LOCATION_ROOT_URL + "historico6.wav");    
     
     this.preload = function (entityID) {
         myID = entityID;
@@ -14,6 +16,7 @@
     };
 
     function click() {
+        clickCounter++;
         var user = Account.username;       
         if (reset) {
             var injectorOptions = {
@@ -21,8 +24,14 @@
                 volume: 1,
                 localOnly: true            
             };
-            Audio.playSound(somhistorico6, injectorOptions);         
-            reset = false;
+            if((clickCounter%2) != 0){
+                injector = Audio.playSound(somhistorico3, injectorOptions);         
+                //reset = false;
+            }else{
+                injector.stop();
+                //reset = true;
+            }
+               
         }         
     }
 
