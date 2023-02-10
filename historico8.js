@@ -6,13 +6,13 @@
     var reset = false;
     var clickCounter = 0;
     var RESET_TIME = 9500;
-    var LOCATION_ROOT_URL = Script.resolvePath(.);
+    var LOCATION_ROOT_URL = Script.resolvePath(".");
     var somhistorico3 = SoundCache.getSound(LOCATION_ROOT_URL + "historico8.wav");    
     
     this.preload = function (entityID) {
         myID = entityID;
-        myParentID = Entities.getEntityProperties(myID,[parentID]).parentID;
-        mySeatNumber = Entities.getEntityProperties(myID,[description]).description;     
+        myParentID = Entities.getEntityProperties(myID,["parentID"]).parentID;
+        mySeatNumber = Entities.getEntityProperties(myID,["description"]).description;     
     };
 
     function click() {
@@ -20,16 +20,16 @@
         var user = Account.username;       
         if (reset) {
             var injectorOptions = {
-                position MyAvatar.position,
-                volume 1,
-                localOnly true            
+                position: MyAvatar.position,
+                volume: 1,
+                localOnly: true            
             };
             if((clickCounter%2) != 0){
                 injector = Audio.playSound(somhistorico3, injectorOptions);         
-                reset = false;
+                //reset = false;
             }else{
                 injector.stop();
-                reset = true;
+                //reset = true;
             }
                
         }         
