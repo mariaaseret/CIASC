@@ -11,10 +11,6 @@
     
     this.clickDownOnEntity = function (entityID, mouseEvent) {
              Script.setTimeout(function () {
-                Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: { x: -3.7219, y: -4.5093, z: -79.3065 }});
-                Entities.editEntity('fec9e9e7-e0e3-4bad-b982-a4cc7a22d08d', { localPosition: { x: -4.9851, y: -4.5093, z: -79.3065 }});
-            }, 1000);
-             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: {x: -3.6000, y: -4.5093, z: -79.3065 }});
                 Entities.editEntity('fec9e9e7-e0e3-4bad-b982-a4cc7a22d08d', { localPosition: { x: -5.0000, y: -4.5093, z: -79.3065 }});
             }, 1250);
@@ -108,9 +104,13 @@
                 Entities.editEntity('fec9e9e7-e0e3-4bad-b982-a4cc7a22d08d', { localPosition: { x: -5.1000, y: -4.5093, z: -79.3065 }});
             }, 27500);
             Script.setTimeout(function () {
+                Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: { x: -3.7218, y: -4.5093, z: -79.3065 }});
+                Entities.editEntity('fec9e9e7-e0e3-4bad-b982-a4cc7a22d08d', { localPosition: { x: -4.9850, y: -4.5093, z: -79.3065 }});
+            }, 27750);
+            Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: { x: -3.7219, y: -4.5093, z: -79.3065 }});
                 Entities.editEntity('fec9e9e7-e0e3-4bad-b982-a4cc7a22d08d', { localPosition: { x: -4.9851, y: -4.5093, z: -79.3065 }});
-            }, 27750);
+            }, 27752);
         
     };
 });
