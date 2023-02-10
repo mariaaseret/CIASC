@@ -55,37 +55,37 @@
             }, 25000);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: {x: -2.6000, y: -4.5093, z: -79.3065} });
-            }, 26000);
+            }, 25250);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: {x: -2.7000, y: -4.5093, z: -79.3065} });
-            }, 27000);
+            }, 25500);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: {x: -2.8000, y: -4.5093, z: -79.3065} });
-            }, 28000);
+            }, 25750);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: {x: -2.9000, y: -4.5093, z: -79.3065} });
-            }, 28250);
+            }, 26000);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: {x: -3.0000, y: -4.5093, z: -79.3065} });
-            }, 29500);
+            }, 26250);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: {x: -3.1000, y: -4.5093, z: -79.3065} });
-            }, 30000);
+            }, 26500);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: {x: -3.2000, y: -4.5093, z: -79.3065} });
-            }, 30250);
+            }, 26750);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: { x: -3.3000, y: -4.5093, z: -79.3065} });
-            }, 30500);
+            }, 27000);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: { x: -3.4000, y: -4.5093, z: -79.3065} });
-            }, 30750);
+            }, 27250);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: { x: -3.6000, y: -4.5093, z: -79.3065} });
-            }, 40000);
+            }, 27500);
             Script.setTimeout(function () {
                 Entities.editEntity('3f002457-f1be-42b6-a436-4f663d232594', { localPosition: { x: -3.7219, y: -4.5093, z: -79.3065} });
-            }, 40250);
+            }, 27750);
         
     };
 })
